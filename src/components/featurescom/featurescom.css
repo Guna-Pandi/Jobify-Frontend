@@ -1,0 +1,107 @@
+.gpt3__features-container__feature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    margin: 1rem;
+}
+
+.gpt3__features-container__feature-title {
+    flex: 1;
+    max-width: 810px;
+    margin-right: 2rem;
+}
+
+.gpt3__features-container__feature-title h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 23px;
+    letter-spacing: -0.04em;
+    color: #fff;
+    text-align: left ;
+    
+    
+}
+
+.gpt3__features-container__feature-title div {
+    width: 400px;
+    height: 5px;
+    background: var(--gradient-bar);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}
+
+.gpt3__features-container_feature-text {
+    flex: 2;
+    max-width: 390px;
+    display: flex;
+    text-align: center;
+    font-size: 3px;
+    
+}
+
+.gpt3__features-container_feature-text p {
+    font-family: var(--font-family);
+    font-weight: 550;
+    font-size: 32px;
+    line-height: 30px;
+    color: var(--color-text);
+    text-align: left;
+    max-width: 1000px;
+    margin-right: 15px;
+
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__features-container__feature-title h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .gpt3__features-container_feature-text p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 12px;
+    }
+
+    .gpt3__features-container__feature {
+        margin: 1rem 0;
+    }
+    .gpt3__features-container__feature-title div {
+        width: 170px;
+        height: 5px;
+        background: var(--gradient-bar);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 1rem;
+    }
+    
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+.gpt3__features-container_feature-text p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--color-text);
+    margin-top: 6rem;
+    margin-left: -450px;
+    text-align: left;
+    padding-left: 15px;
+
+
+}
+.gpt3__features-container__feature-title h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    color: #fff;
+    text-align: left ;
+    
+    
+}
+}

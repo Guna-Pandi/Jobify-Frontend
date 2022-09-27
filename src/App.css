@@ -1,0 +1,142 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    font-size: 35px;
+
+}
+a{
+  display: inline-block;
+  position: relative;
+  
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: -11px;
+  border-radius: 8px;
+  left: 0;
+  background-color: #54ff20;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  a {
+    color: unset;
+    text-decoration: none;
+    font-size: 21px;
+}
+}
+
+.gradient__bg{
+    
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 10% 50%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 10% 50%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 10% 50%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 10% 50%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 10% 50%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    
+    
+}
+.gradient__text{
+    background:var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding{
+    padding: 4rem 6rem;
+}
+
+.section__margin{
+    margin: 4rem 6rem;
+}
+
+.flip-scale-up-hor {
+    -webkit-animation: flip-scale-up-hor 0.5s linear both;
+            animation: flip-scale-up-hor 0.5s linear both;
+}
+
+
+ @-webkit-keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+              transform: scale(2.5) rotateX(-90deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+              transform: scale(1) rotateX(-180deg);
+    }
+  }
+  @keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+              transform: scale(2.5) rotateX(-90deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+              transform: scale(1) rotateX(-180deg);
+    }
+  }
+/* for tablet and big screen devices */
+  @media screen and (max-width:700px) {
+    .section__padding{
+        padding: 4rem ;
+    }
+    .section__margin{
+        margin: 4rem;
+    }
+  }
+
+/* for mobile  devices */
+
+@media screen and (max-width:550px) {
+    .section__padding{
+        padding: 4rem 2rem;
+    }
+    .section__margin{
+        margin: 4rem 2rem;
+    }
+  }
